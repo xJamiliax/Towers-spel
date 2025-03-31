@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 210817247}
   - component: {fileID: 210817246}
   m_Layer: 5
-  m_Name: Button
+  m_Name: inventoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -631,6 +631,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2042636394}
+        m_TargetAssemblyTypeName: InvetoryManager, Assembly-CSharp
+        m_MethodName: ListItems
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &210817247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,7 +694,7 @@ GameObject:
   - component: {fileID: 527348921}
   - component: {fileID: 527348920}
   m_Layer: 5
-  m_Name: Button
+  m_Name: exit button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1410,7 +1422,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.19189453, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1772,8 +1784,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  ItemContent: {fileID: 0}
-  InventoryItem: {fileID: 0}
+  ItemContent: {fileID: 1432193546}
+  InventoryItem: {fileID: 1919531058161022014, guid: f51e5ebf002defe41948044070a58f73,
+    type: 3}
 --- !u!4 &2042636395
 Transform:
   m_ObjectHideFlags: 0
