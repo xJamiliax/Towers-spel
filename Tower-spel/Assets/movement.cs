@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using Unity.Properties;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
