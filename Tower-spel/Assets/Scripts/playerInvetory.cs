@@ -6,7 +6,7 @@ public class playerInvetory : MonoBehaviour
 {
     [Header("General")]
 
-    public List<itemType> inventoryList;
+    public List<Item> inventoryList;
     public int selectedItem;
 
     //[Space(20)]
