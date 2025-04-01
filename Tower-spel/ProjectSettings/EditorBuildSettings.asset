@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jadascene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/tower.unity
+    guid: 911a33d8fd800bb47b7bfeab018cc6f0
   m_configObjects: {}
