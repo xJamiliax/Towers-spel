@@ -58,11 +58,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Yulltan-Regular SDF
+  m_Name: Yulltan-Regular SDF InteractionText
   m_EditorClassIdentifier: 
-  hashCode: 1577735377
+  hashCode: -166705162
   material: {fileID: 7328734770701252414}
-  materialHashCode: -1248230319
+  materialHashCode: 543387542
   m_Version: 1.1.0
   m_SourceFontFileGUID: 7340fbd9f40995c4f8d631535c5a2529
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 7340fbd9f40995c4f8d631535c5a2529,
@@ -2725,7 +2725,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
+    - _OutlineWidth: 0.078
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.8333333
