@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 816512920}
   - component: {fileID: 816512919}
   m_Layer: 5
-  m_Name: Quit
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,7 +352,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: 'Back
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2af0b9296a7d4bf419ae66ddaf9ce321, type: 2}
   m_sharedMaterial: {fileID: -7431348404185582188, guid: 2af0b9296a7d4bf419ae66ddaf9ce321,
@@ -362,8 +364,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283519313
+  m_fontColor: {r: 0.31764707, g: 0.31764707, b: 0.31764707, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -380,10 +382,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58.8
-  m_fontSizeBase: 0
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -829,6 +831,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 701328652368230357, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 371
+      objectReference: {fileID: 0}
     - target: {fileID: 861417742236447072, guid: b7536d560f8d8ae4bb787098ab43084f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -929,6 +936,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 900a99bc6d06dd845a276853433ef5ce, type: 2}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4289920768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColorGradient.topLeft.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColorGradient.topLeft.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933720467637002389, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColorGradient.topLeft.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036646396103359947, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036646396103359947, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634755650910926367, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -171
+      objectReference: {fileID: 0}
     - target: {fileID: 2642375726761351195, guid: b7536d560f8d8ae4bb787098ab43084f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -964,10 +1031,115 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436394635877123770, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4283124555
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.15294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.15294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.15294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992619293026656206, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280756007
+      objectReference: {fileID: 0}
     - target: {fileID: 5721015255628366549, guid: b7536d560f8d8ae4bb787098ab43084f,
         type: 3}
       propertyPath: m_Name
       value: Menu Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840658335296451504, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840658335296451504, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840658335296451504, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840658335296451504, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840658335296451504, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840658335296451504, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337251323081876113, guid: b7536d560f8d8ae4bb787098ab43084f,
+        type: 3}
+      propertyPath: m_Name
+      value: Play
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
