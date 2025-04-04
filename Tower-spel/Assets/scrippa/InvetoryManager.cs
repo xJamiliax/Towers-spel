@@ -24,7 +24,7 @@ public class InventoryManager : MonoBehaviour
     public void Add(Item item)
     {
         items.Add(item);
-       // ListItems();
+       ListItems();
     }
 
 
@@ -48,10 +48,13 @@ public class InventoryManager : MonoBehaviour
             var itemName = obj.transform.Find("ItemName").GetComponent<Text>();
             var ItemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
 
-            itemName.text = item.itemName;
-            ItemIcon.sprite = item.icon; 
             
 
+
+            itemName.text = item.itemName;
+            ItemIcon.sprite = item.icon;
+
+            Debug.Log($"Item toegevoegd: {item.itemName}, Sprite: {item.icon}");
 
         }
     }

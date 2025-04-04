@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &98169879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &552932660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1478,15 +1478,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Invetory
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4284769402
+  m_fontColor: {r: 0.4792453, g: 0.39334285, b: 0.39334285, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2270,14 +2270,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2042636393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a48406c065cc1448418d1e15b43537, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b4b8c1a6279131499a42c70f4fe26ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
   ItemContent: {fileID: 1432193546}
   InventoryItem: {fileID: 8592015614510555123, guid: f51e5ebf002defe41948044070a58f73,
     type: 3}
-  EnableRemove: {fileID: 1538119258}
+  EnableRemove: {fileID: 0}
 --- !u!4 &2042636395
 Transform:
   m_ObjectHideFlags: 0
@@ -2505,6 +2505,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1432193546}
     m_Modifications:
+    - target: {fileID: 25235079685059017, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 796685904195174070, guid: f51e5ebf002defe41948044070a58f73,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2605,10 +2610,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1961128175836888799, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_Name
+      value: IconName
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961128175836888799, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264854656794584232, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928960943813432781, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928960943813432781, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 8592015614510555123, guid: f51e5ebf002defe41948044070a58f73,
         type: 3}
       propertyPath: m_Name
       value: item
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592015614510555123, guid: f51e5ebf002defe41948044070a58f73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
