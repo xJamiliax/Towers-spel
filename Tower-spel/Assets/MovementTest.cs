@@ -26,6 +26,8 @@ public class MovementTest : MonoBehaviour
     private float crouchHeight = 0.5f;
     private Animator anim;
 
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -36,7 +38,7 @@ public class MovementTest : MonoBehaviour
         Cursor.visible = false;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -60,15 +62,25 @@ public class MovementTest : MonoBehaviour
         else
         {
             float currentSpeed = Mathf.Abs(horizontal) + Mathf.Abs(vertical);
-            Debug.Log(currentSpeed);
+            //Debug.Log(currentSpeed);
             anim.SetFloat("Speed", currentSpeed);
-            transform.Translate(moveDir * Time.deltaTime * currentMoveSpeed);
+            //rb.AddForce(transform.forward * (currentMoveSpeed * 1f));
+            //rb.velocity = moveDir * currentMoveSpeed;
+            Vector3 direction = transform.TransformDirection(moveDir);
+            Vector3 velocity = direction * (currentMoveSpeed * moveDir.magnitude);
+            velocity.y = rb.velocity.y;
+            rb.velocity = velocity;
+
+            //transform.Translate(moveDir * Time.deltaTime * currentMoveSpeed);
         }
 
         float bodyRotate = Input.GetAxis("Mouse X");
         Vector3 bodyRot = new Vector3();
-        bodyRot.y = bodyRotate * Time.deltaTime * rotateSpeed;
-        transform.Rotate(bodyRot);
+        //bodyRot.y = bodyRotate * Time.deltaTime * rotateSpeed;
+        //transform.Rotate(bodyRot);
+        Vector3 rotateVelocity = new Vector3(0, bodyRotate * 100f, 0);
+        Quaternion deltaRotation = Quaternion.Euler(rotateVelocity * Time.fixedDeltaTime);
+        rb.MoveRotation(rb.rotation * deltaRotation);
 
         float camRotate = Input.GetAxis("Mouse Y");
         Vector3 camRot = new Vector3();
@@ -90,7 +102,8 @@ public class MovementTest : MonoBehaviour
     void Jump()
     {
         anim.SetTrigger("Jump");
-        rb.velocity += jumpForce;
+        //rb.velocity += jumpForce;
+        rb.AddForce((jumpForce.y * transform.up), ForceMode.Impulse);
     }
 
     bool IsGrounded()
