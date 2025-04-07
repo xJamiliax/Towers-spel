@@ -39,6 +39,17 @@ public class DialogueManager : MonoBehaviour
                 StartDialogue();
             }
         }
+
+        if (isDialogueActive)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     void StartDialogue()

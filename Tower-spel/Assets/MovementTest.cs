@@ -34,8 +34,8 @@ public class MovementTest : MonoBehaviour
         anim = GetComponent<Animator>();
         originalHeight = GetComponent<CapsuleCollider>().height;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     void FixedUpdate()
